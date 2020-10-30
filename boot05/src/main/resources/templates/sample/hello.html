@@ -1,0 +1,16 @@
+<html xmlns:th="http://www.thymeleaf.org" 
+	xmlns:layout="http://ultraq.net.nz/thymeleaf/layout" 
+	layout:decorate="~{/layout/layout1}">
+	
+<!-- 레이아웃을 적용하려면 hello.html에 레이아웃을 사용할 수 있는
+	 namespace를 추가해 주어야 한다. -->
+	 
+<div layout:fragment="content">
+	<h1>Hello Thymeleaf</h1>
+</div>
+
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+		alert("JavaScript Block......");
+	</script>
+</th:block>
