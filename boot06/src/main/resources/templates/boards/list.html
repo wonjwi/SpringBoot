@@ -1,0 +1,20 @@
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{/layout/layout1}">
+
+<div layout:fragment="content">
+	
+	<div class="panel-heading">게시글 목록</div>
+	<div class="panel-body">
+		게시글 목록을 보여줍니다.
+	</div>
+	
+</div>
+
+<th:block layout:fragment="script">
+	<script th:inline="javascript">
+	$(document).ready(function() {
+		alert("페이지가 시작되었습니다.");
+	});
+	</script>
+</th:block>
